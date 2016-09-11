@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamAndroid.Views.LoginPage"  BackgroundImage="Sky.png" >
+
+  
+ <StackLayout VerticalOptions="StartAndExpand" Padding="50"  >
+    
+    <Label Text="LOGIN" FontSize="20" TextColor="#00008B"/>
+   <Entry x:Name="userLogin" Placeholder="enter login" TextColor="#000000"  Text="{Binding Path=Login}" FontSize="20"/>
+
+    <Label Text="PASSWORD" FontSize="20" TextColor="#00008B"/>
+    <Entry IsPassword="true" x:Name="userPassword" Placeholder="enter password" TextColor="#000000" Text="{Binding Path=Password}" FontSize="20" />
+     
+    <Button Text="Login" Clicked="doLogin"  BackgroundColor="#1E90FF" />
+
+  </StackLayout>
+</ContentPage>
